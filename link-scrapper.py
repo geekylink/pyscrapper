@@ -43,8 +43,6 @@ def getLinks(url):
     for a in soup.findAll('a'):
         a = a.get("href")
 
-        print(a, url)
-
         if url[-1] != "/" and a[0] != "/":
             url = url + "/"
 
